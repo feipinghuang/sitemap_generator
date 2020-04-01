@@ -141,7 +141,7 @@ module SitemapGenerator
           end
 
           unless SitemapGenerator::Utilities.blank?(self[:mobile])
-            builder.mobile :mobile
+            builder.mobile :mobile, self[:mobile]
           end
 
           unless SitemapGenerator::Utilities.blank?(self[:pagemap])
